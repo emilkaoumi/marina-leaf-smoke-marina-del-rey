@@ -32,16 +32,11 @@ navToggle.addEventListener('click', toggleMenu);
 navOverlay.addEventListener('click', closeMenu);
 navMobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
 
-// ===== Contact form (prototype — no backend) =====
-const contactForm = document.getElementById('contactForm');
-const formSuccess = document.getElementById('formSuccess');
-if (contactForm) {
-  contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    formSuccess.classList.add('show');
-    contactForm.reset();
-  });
-}
+// ===== Contact form =====
+// Submission handling for #contactForm is done by the @formspree/ajax
+// library (see the <script> tags near the end of index.html), which binds
+// its own submit listener based on the data-fs-* attributes on the form.
+// Do not add a second submit handler here — it will double-submit / conflict.
 
 // ===== Scroll-reveal =====
 const revealTargets = document.querySelectorAll('[data-reveal]');

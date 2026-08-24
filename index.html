@@ -32,7 +32,7 @@
       <li><a href="#contact">Contact</a></li>
     </ul>
     <div class="nav-cta">
-      <a href="https://instagram.com/marinaleafsmokeshop" target="_blank" rel="noopener" class="nav-social" aria-label="Instagram">
+      <a href="https://www.instagram.com/shopmarinaleaf/" target="_blank" rel="noopener" class="nav-social" aria-label="Instagram">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
       </a>
       <a href="https://www.google.com/maps/dir/?api=1&destination=Marina+Del+Rey,+CA+90292" target="_blank" rel="noopener" class="btn btn-primary">Get Directions</a>
@@ -51,7 +51,7 @@
   <a href="#gallery">Gallery</a>
   <a href="#visit">Visit Us</a>
   <a href="#contact">Contact</a>
-  <a href="https://instagram.com/marinaleafsmokeshop" target="_blank" rel="noopener">Instagram</a>
+  <a href="https://www.instagram.com/shopmarinaleaf/" target="_blank" rel="noopener">Instagram</a>
   <a href="https://www.google.com/maps/dir/?api=1&destination=Marina+Del+Rey,+CA+90292" target="_blank" rel="noopener" class="btn btn-primary">Get Directions</a>
 </div>
 
@@ -534,7 +534,7 @@
           <div class="visit-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg></div>
           <div>
             <h4>Parking</h4>
-            <p>Public marina parking lots and metered spaces nearby, with easy access from Admiralty Way.</p>
+            <p>Located in a shopping center with plenty of storefront parking right outside our door.</p>
           </div>
         </div>
         <div class="visit-row">
@@ -557,6 +557,12 @@
           referrerpolicy="no-referrer-when-downgrade"
           title="Marina Leaf Smoke Shop location map">
         </iframe>
+        <a class="map-directions-overlay" href="https://www.google.com/maps/dir/?api=1&destination=Marina+Del+Rey,+CA+90292" target="_blank" rel="noopener" aria-label="Get directions to Marina Leaf Smoke Shop on Google Maps">
+          <span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11l18-8-8 18-2-8-8-2Z"/></svg>
+            Get Directions
+          </span>
+        </a>
       </div>
     </div>
   </div>
@@ -587,9 +593,9 @@
         </div>
 
         <div class="social-row">
-          <a href="https://instagram.com/marinaleafsmokeshop" target="_blank" rel="noopener" class="social-pill">
+          <a href="https://www.instagram.com/shopmarinaleaf/" target="_blank" rel="noopener" class="social-pill">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
-            @marinaleafsmokeshop
+            @shopmarinaleaf
           </a>
         </div>
       </div>
@@ -599,26 +605,32 @@
           <div class="form-row">
             <div class="form-group">
               <label for="fname">Name</label>
-              <input type="text" id="fname" name="name" placeholder="Your name" required>
+              <input type="text" id="fname" name="name" placeholder="Your name" data-fs-field required>
+              <span data-fs-error="name" class="form-field-error"></span>
             </div>
             <div class="form-group">
               <label for="femail">Email</label>
-              <input type="email" id="femail" name="email" placeholder="you@example.com" required>
+              <input type="email" id="femail" name="email" placeholder="you@example.com" data-fs-field required>
+              <span data-fs-error="email" class="form-field-error"></span>
             </div>
           </div>
           <div class="form-group">
             <label for="fsubject">Subject</label>
-            <input type="text" id="fsubject" name="subject" placeholder="How can we help?">
+            <input type="text" id="fsubject" name="subject" placeholder="How can we help?" data-fs-field>
           </div>
           <div class="form-group">
             <label for="fmessage">Message</label>
-            <textarea id="fmessage" name="message" rows="5" placeholder="Tell us more..." required></textarea>
+            <textarea id="fmessage" name="message" rows="5" placeholder="Tell us more..." data-fs-field required></textarea>
+            <span data-fs-error="message" class="form-field-error"></span>
           </div>
-          <button type="submit" class="btn btn-primary" style="width:100%;">Send Message</button>
-          <p class="form-note">This is a prototype form &mdash; submissions aren't connected to email yet. We'll wire this up to send directly to info@marinaleaf.com before launch.</p>
-          <div class="form-success" id="formSuccess">
+          <button type="submit" class="btn btn-primary" style="width:100%;" data-fs-submit-btn>Send Message</button>
+          <div class="form-success" data-fs-success>
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
             Thanks! We'll be in touch soon.
+          </div>
+          <div class="form-error" data-fs-error>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            Something went wrong. Please email us directly at info@marinaleaf.com.
           </div>
         </form>
       </div>
@@ -642,7 +654,7 @@
         </div>
         <p>A premium smoke shop bringing harbor calm to Marina Del Rey, CA. Vapes, cigars, tobacco, accessories, exotic snacks &amp; drinks, and boat-day essentials.</p>
         <div class="footer-social">
-          <a href="https://instagram.com/marinaleafsmokeshop" target="_blank" rel="noopener" aria-label="Instagram"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+          <a href="https://www.instagram.com/shopmarinaleaf/" target="_blank" rel="noopener" aria-label="Instagram"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
           <a href="mailto:info@marinaleaf.com" aria-label="Email"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg></a>
         </div>
       </div>
@@ -666,7 +678,6 @@
     </div>
     <div class="footer-bottom">
       <span>&copy; 2026 Marina Leaf Smoke Shop. All rights reserved.</span>
-      <span class="proto-badge">Website Prototype &mdash; Under Active Development</span>
     </div>
   </div>
 </footer>
@@ -679,5 +690,12 @@
 </div>
 
 <script src="assets/js/main.js"></script>
+
+<!-- Formspree AJAX integration for #contactForm -->
+<script>
+  window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
+  formspree('initForm', { formElement: '#contactForm', formId: 'xeajwnkj', useDefaultStyles: false });
+</script>
+<script src="https://unpkg.com/@formspree/ajax@1" defer></script>
 </body>
 </html>
